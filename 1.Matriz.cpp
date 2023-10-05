@@ -1,4 +1,4 @@
-/*Vamos a realizar un ejercicio viendo el funcionamiento de una matriz ingresando números*/
+/*Vamos a realizar un ejercicio viendo el funcionamiento de una matriz ingresando nÃºmeros*/
 
 #include <iostream>
 #include<conio.h>
@@ -13,9 +13,9 @@ int imprimeMatriz();
 int main(){
     
     
-    cout<<"Digite el número de filas: ";
+    cout<<"Digite el nÃºmero de filas: ";
     cin>>filas;
-    cout<<"Digite el número de columnas: ";
+    cout<<"Digite el nÃºmero de columnas: ";
     cin>>columnas;
     
     
@@ -24,19 +24,19 @@ int main(){
 	imprimeMatriz();
 }
 
-//ESTA FUNCIÓN REGISTRA LOS DATOS EN LA MATRIZ
+//ESTA FUNCIÃ“N REGISTRA LOS DATOS EN LA MATRIZ
 int ingresaDatos(int filas,int columnas){ 
 	
 	 for(int i=0;i<filas;i++){
        for(int j=0;j<columnas;j++){
-           cout<<"Digite un número ["<<i+1<<"]["<<j+1<<"]";
+           cout<<"Digite un nÃºmero ["<<i+1<<"]["<<j+1<<"]";
            cin>>matriz[i][j];
        }  
     }
 	
 }
 
-//ESTA FUNCIÓN IMPRIME LOS DATOS INGRESADOS EN LA MATRIZ
+//ESTA FUNCIÃ“N IMPRIME LOS DATOS INGRESADOS EN LA MATRIZ
 int imprimeMatriz(){
 	    for(int i=0;i<filas;i++){
         for(int j=0;j<columnas;j++){
@@ -44,6 +44,6 @@ int imprimeMatriz(){
             cout<<matriz[i][j];
             cout<<"  ";
         }
-           cout<<"\n\n"; //Esto es para realizar un salto entre cada terminación de fila
+           cout<<"\n\n"; //Esto es para realizar un salto entre cada terminaciÃ³n de fila
     }
 }
